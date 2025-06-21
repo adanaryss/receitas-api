@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minhas Receitas</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Minhas Receitas</h1>
+    <form id="form-receita">
+      <label for="nome">Nome da Receita:</label>
+      <input type="text" id="nome" name="nome" required />
+
+      <label for="ingredientes">Ingredientes (separados por vírgula):</label>
+      <input type="text" id="ingredientes" name="ingredientes" required />
+
+      <label for="modo_preparo">Modo de Preparo:</label>
+      <textarea id="modo_preparo" name="modo_preparo" required></textarea>
+
+      <button type="submit">Cadastrar Receita</button>
+    </form>
+
+    <p id="response-message"></p>
+
+    <section>
+      <h2>Receitas cadastradas</h2>
+      <ul id="lista-receitas"></ul>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
